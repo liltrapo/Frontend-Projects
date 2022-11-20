@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+body {
+    margin: 35px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    height: 600px;
+    width: 560px;
+    position: relative;
+    bottom: 50px;
+}
+
+.display {
+    font-size: 70px;
+    font-weight: 300;
+    height: 120px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: right;
+    padding-top: 20px;
+}
+
+
+.buttons {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.btn {
+    align-items: center;
+    background-color: rgba(122, 139, 139, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    font-size: 35px;
+    height: 100px;
+    width: 110px;
+    justify-content: center;
+    transition: filter .3s;
+}
+
+.btn.function {
+    color: black;
+    background-color: #a5a5a5;
+}
+
+.btn.num-btn {
+    color: white;
+}
+
+.btn.operand {
+    background: #f09014;
+    color: white;
+}
+
+/* button:nth-child(18):focus,
+button:nth-child(18):active {
+    background-color: white;
+
+} */
+
+.btn.operand:focus,
+.btn.btn.operand:active {
+    background-color: white;
+    color: #d17d10;
+    transition: .7s;
+}
+
+.btn.num-0 {
+    border-radius: 55px;
+    grid-column: 1 / span 2;
+    justify-content: flex-start;
+    padding-left: 43px;
+    width: 250px;
+}
+
+.btn:active,
+.btn:focus {
+    filter: brightness(150%);
+}

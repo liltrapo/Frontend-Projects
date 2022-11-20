@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-app</title>
+    <link rel="stylesheet" href="../css/quiz-app.css">
+</head>
+<body id="body">
+    <div class="container">
+        <div class="quiz-heading">
+            <header>
+                <h1> Quiz App </h1>
+                <span class="scores" id="score"></span>
+            </header>
+        </div>
+
+        <div class="quiz-container">
+            <div id="slide-1">
+                <div class="questions">
+                    <span class="question-order">
+                        <p>Who is the richest man alive</p>
+                        <hr>
+                    </span>
+                </div>
+                
+                <div class="options">
+                    <span class="optionA">A</span> <span class="options-text" onclick="correct1(), togglemood()">Elon Musk </span> <br><br>
+                    <span class="optionB">B</span> <span class="options-text"> Leonard</span> <br><br>
+                    <span class="optionC">C</span> <span class="options-text"> Your MOM </span>
+                </div>
+            </div>
+
+            <div id="slide-2" class="oSlides">
+                <div class="questions">
+                    <span class="question-order">
+                        <p>Who is the Greatest Person</p>
+                        <hr>
+                    </span>
+                </div>
+                
+                <div class="options">
+                    <span class="optionA">A</span> <span class="options-text"> Leonard </span> <br><br>
+                    <span class="optionB">B</span> <span class="options-text" onclick="correct2(), togglemood()"> Albert Einstein </span> <br><br>
+                    <span class="optionC">C</span> <span class="options-text"> Neymar </span>
+                </div>
+            </div>
+
+            <div id="slide-3" class="oSlides">
+                <div class="questions">
+                    <span class="question-order">
+                        <p>Who is the Smartest Person</p>
+                        <hr>
+                    </span>
+                </div>
+                
+                <div class="options">
+                    <span class="optionA">A</span> <span class="options-text"> Leonard  </span> <br><br>
+                    <span class="optionB">B</span> <span class="options-text" onclick="correct3(), togglemood()"> Albert Einstein </span> <br><br>
+                    <span class="optionC">C</span> <span class="options-text"> Ronaldo </span>
+                </div>
+            </div>
+
+            <div id="slide-4" class="oSlides">
+                <div class="questions">
+                    <span class="question-order">
+                        <p>Who is the Smartest Person</p>
+                        <hr>
+                    </span>
+                </div>
+                
+                <div class="options">
+                    <span class="optionA">A</span> <span class="options-text"> Leonard </span> <br><br>
+                    <span class="optionB">B</span> <span class="options-text" onclick="correct4(), togglemood()"> Albert Einstein </span> <br><br>
+                    <span class="optionC">C</span> <span class="options-text"> Messi </span>
+                </div>
+            </div>
+            
+            <span class="slide" id="slide"> 1 </span>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="../js/quiz-app.js"></script>
+</body>
+</html>

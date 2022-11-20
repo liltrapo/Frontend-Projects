@@ -1,0 +1,119 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@keyframes changebg {
+    0% {background-color: green;}
+    50% {background-color: green;}
+}
+
+.container 
+{
+    background-color: #223331;
+    margin: 30px;
+    padding-left: 30px;
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.container .quiz-heading header
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .quiz-heading header h1
+{
+    font-size: 30px;
+}
+
+.container .quiz-heading header span 
+{
+    margin-left: 280px;
+    cursor: none;
+}
+
+.container .quiz-container 
+{
+    background-color: #999;
+    border-radius: 15px;
+    position: absolute;
+    right: 15px;
+    width: 500px;
+    height: 350px;
+    font-size: 20px;
+}
+
+.container .quiz-container .questions
+{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+
+.container .quiz-container .options .optionA, .optionB, .optionC
+{
+    background-color: #424141;
+    width: 30px;
+    padding: 2px;
+    border-radius: 10px;
+    margin-left: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.container .quiz-container .options .optionA::after 
+{
+    content: ":";
+}
+
+.container .quiz-container .options .optionB::after 
+{
+    content: ":";
+}
+
+.container .quiz-container .options .optionC::after 
+{
+    content: ":";
+}
+
+.container .quiz-container .options .options-text
+{
+    background-color: #424141;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.container .quiz-container .options .options-text:hover
+{
+    background-color: #000000;
+}
+
+.container .quiz-container .slide 
+{
+    position: relative;
+    left: 50%;
+    top: 15%;
+}
+
+.container .quiz-container .oSlides {
+    display: none;
+}

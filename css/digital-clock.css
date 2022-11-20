@@ -1,0 +1,29 @@
+body {
+    /* margin: 200px; */
+    background-color: #e3e3e3;
+}
+
+
+.output {
+    font-size: 60px;
+    padding: 0px;
+    font-family: monospace;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    position: relative;
+    top: 200px;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #000000;
+    color: #aca8a8;
+    align-content: center;
+    justify-content: center;
+}
+
+.output:hover {
+    box-shadow: -100px 100px 20px 5px #333;
+    transform: skewX(-20deg);
+    transition: 3s;
+}

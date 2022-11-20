@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    top: 200px;
+    background-color: #999;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: blink;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    font-size: 50px;
+    color: red;
+}
+
+@keyframes blink {
+    0% {color: pink;}
+    5% {color: blue;}
+    10% {color: greenyellow;}
+    15% {color: green;}
+    20% {color: yellow;}
+    25% {color: aqua;}
+    30% {color: aquamarine;}
+    35% {color: saddlebrown;}
+    40% {color: salmon;}
+    45% {color: grey;}
+    50% {color: slateblue;}
+    55% {color: firebrick;}
+    60% {color: lightblue;}
+    65% {color: oldlace;}
+    70% {color: black;}
+    75% {color: wheat;}
+    80% {color: rebeccapurple;}
+    85% {color: teal;}
+    90% {color: honeydew;}
+    95% {color: darkgoldenrod;}
+    100% {color: red;}
+}
+
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    letter-spacing: 0.45em;
+}

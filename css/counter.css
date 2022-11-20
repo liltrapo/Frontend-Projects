@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #cca3a3;
+}
+
+.container {
+    display: flex;
+    max-width: 500px;
+    height: 300px;
+    background-color: tan;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+}
+
+.display {
+    position: absolute;
+    font-size: 65px;
+    margin-bottom: 200px;
+    color: teal;
+}
+
+.count-btn {
+    position: absolute;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.count-btn button {
+    padding: 10px;
+    color: white;
+    background-color: #044923;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, 0.534);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+}

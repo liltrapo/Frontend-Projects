@@ -1,0 +1,14 @@
+body {
+    max-width: 600px;
+    display: flex;
+    max-height: 300px;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    justify-content: center;
+}
+
+img {
+    cursor: pointer;
+    width: 100px;
+}
