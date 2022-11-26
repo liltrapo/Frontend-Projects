@@ -11,3 +11,5 @@ script.src = 'https://kit.fontawesome.com/ad98cec03b.js';
 script.crossOrigin = 'anonymous';
 
 head.appendChild(script)
+
+console.log("made by leo. ")
